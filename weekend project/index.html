@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="main.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="main.js" defer></script>
+<title>Quick Weather</title>
+</head>
+<body>
+    <!-- Input Area -->
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <form>
+                <div class="mb-3">
+                  <label for="city" class="form-label"></label>
+                  <input type="text" class="form-control" placeholder="Enter Your City">
+                </div>
+                <button onclick="loadData" type="button" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+    </div>
+    <!-- End Input Area -->
+    <!-- Info Boxes -->
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">High</div>
+                <div class="panel-body" id="high"></div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">Low</div>
+                <div class="panel-body" id="low"></div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">Forecast</div>
+                <div class="panel-body" id="forecast"></div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">Humidity</div>
+                <div class="panel-body" id="humidity"></div>
+            </div>
+        </div>
+    </div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
